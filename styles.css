@@ -1,69 +1,69 @@
 /* Основные стили для всего сайта */
 body {
-  background-color: black; /* Черный фон для всего сайта */
-  color: white; /* Белый цвет текста для контраста */
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Отключаем прокрутку до полной загрузки */
+    background-color: black; /* Черный фон для всего сайта */
+    color: white; /* Белый цвет текста для контраста */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Отключаем прокрутку до полной загрузки */
 }
 
 /* Стиль страницы предзагрузки */
 .preload {
-  position: fixed; /* Закрепляем предзагрузку поверх всего контента */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease, visibility 0.5s ease; /* Плавное исчезновение */
+    position: fixed; /* Закрепляем предзагрузку поверх всего контента */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Плавное исчезновение */
 }
 
 .preload-image {
-  width: 100px; /* Размер изображения предзагрузки */
-  height: auto;
+    width: 100px; /* Размер изображения предзагрузки */
+    height: auto;
 }
 
 /* Контейнер для изображения */
 .image-container {
-  background-color: black; /* Черный фон для контейнера с изображением */
-  padding: 20px; /* Отступы вокруг изображения */
-  box-sizing: border-box; /* Учитываем отступы в общей ширине */
-  text-align: center; /* Центрируем изображение */
-  overflow: hidden; /* Скрываем лишнюю часть изображения */
+    background-color: black; /* Черный фон для контейнера с изображением */
+    padding: 20px; /* Отступы вокруг изображения */
+    box-sizing: border-box; /* Учитываем отступы в общей ширине */
+    text-align: center; /* Центрируем изображение */
+    overflow: hidden; /* Скрываем лишнюю часть изображения */
 }
 
 /* Респонсивное изображение */
 .responsive-image {
-  width: 100%; /* Растягиваем изображение по ширине */
-  height: auto; /* Сохраняем пропорции */
-  display: block;
-  pointer-events: none; /* Отключаем возможность взаимодействовать с изображением */
+    width: 100%; /* Растягиваем изображение по ширине */
+    height: auto; /* Сохраняем пропорции */
+    display: block;
+    pointer-events: none; /* Отключаем возможность взаимодействовать с изображением */
 }
 
 /* Для мобильных устройств */
 @media (max-width: 768px) {
-  .image-container {
-      padding: 0px; /* Отступы вокруг изображения */
-  }
-  .responsive-image {
-      padding: 0px;
-      width: calc(100%); /* Уменьшаем ширину для отступов */
-      margin: 0px; /* Добавляем отступы по бокам */
-  }
+    .image-container {
+        padding: 0px; /* Отступы вокруг изображения */
+    }
+    .responsive-image {
+        padding: 0px;
+        width: calc(100%); /* Уменьшаем ширину для отступов */
+        margin: 0px; /* Добавляем отступы по бокам */
+    }
 
-  .responsive-image {
-      content: url('r.png'); /* Смена изображения на мобильных устройствах */
-  }
+    .responsive-image {
+        content: url('r.png'); /* Смена изображения на мобильных устройствах */
+    }
 }
 
 /* Запрещаем перетаскивание изображений */
 img {
-  -webkit-user-drag: none; /* Для WebKit-браузеров */
-  user-drag: none; /* Для остальных браузеров */
+    -webkit-user-drag: none; /* Для WebKit-браузеров */
+    user-drag: none; /* Для остальных браузеров */
 }
