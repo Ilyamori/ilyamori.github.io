@@ -10,9 +10,22 @@
     function disableRightClick(event) {
       event.preventDefault();
     }
+
+    // Скрыть предзагрузку после полной загрузки страницы
+    window.onload = function() {
+      const preload = document.getElementById('preload');
+      preload.style.opacity = 0;
+      preload.style.visibility = 'hidden';
+    }
   </script>
 </head>
 <body>
+  <!-- Страница предзагрузки -->
+  <div id="preload" class="preload">
+    <img src="trigga.png" alt="Предзагрузка" class="preload-image">
+  </div>
+
+  <!-- Основное содержимое -->
   <div class="image-container">
     <img src="rr.png" alt="Изображение" class="responsive-image" oncontextmenu="disableRightClick(event)" draggable="false">
   </div>
