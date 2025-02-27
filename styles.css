@@ -24,9 +24,13 @@ body {
   
   /* Для мобильных устройств */
   @media (max-width: 768px) {
+    .image-container {
+        padding: 0px; /* Отступы вокруг изображения */
+      }
     .responsive-image {
-      width: calc(100% - 1px); /* Уменьшаем ширину для отступов */
-      margin: 0 1px; /* Добавляем отступы по бокам */
+        padding: 0px;
+      width: calc(100%); /* Уменьшаем ширину для отступов */
+      margin: 0px; /* Добавляем отступы по бокам */
     }
   
     .responsive-image {
