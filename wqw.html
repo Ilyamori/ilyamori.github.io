@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивное изображение с черным фоном</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Отключаем правый клик на изображении
+    function disableRightClick(event) {
+      event.preventDefault();
+    }
+  </script>
+</head>
+<body>
+  <div class="image-container">
+    <img src="rr.png" alt="Изображение" class="responsive-image" oncontextmenu="disableRightClick(event)" draggable="false">
+  </div>
+</body>
+</html>
