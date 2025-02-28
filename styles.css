@@ -31,7 +31,6 @@ body {
 
 /* Контейнер для изображения */
 .image-container {
-    background-color: black; /* Черный фон для контейнера с изображением */
     padding: 35px; /* Отступы вокруг изображения */
     box-sizing: border-box; /* Учитываем отступы в общей ширине */
     text-align: center; /* Центрируем изображение */
