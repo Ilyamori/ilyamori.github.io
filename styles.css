@@ -1,6 +1,6 @@
 /* Основные стили для всего сайта */
 body {
-    background-color: black; /* Черный фон для всего сайта */
+    background-color: white; /* Черный фон для всего сайта */
     color: white; /* Белый цвет текста для контраста */
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ body {
 /* Контейнер для изображения */
 .image-container {
     background-color: black; /* Черный фон для контейнера с изображением */
-    padding: 115px; /* Отступы вокруг изображения */
+    padding: 35px; /* Отступы вокруг изображения */
     box-sizing: border-box; /* Учитываем отступы в общей ширине */
     text-align: center; /* Центрируем изображение */
     overflow: hidden; /* Скрываем лишнюю часть изображения */
@@ -49,7 +49,7 @@ body {
 /* Для мобильных устройств */
 @media (max-width: 768px) {
     .image-container {
-        padding: 18px; /* Отступы вокруг изображения */
+        padding: 9px; /* Отступы вокруг изображения */
     }
     .responsive-image {
         padding: 0px;
